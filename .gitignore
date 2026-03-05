@@ -1,6 +1,46 @@
+# Node modules
 node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
 .env
+.env.*
+
+# Cypress videos and screenshots (artifacts de test)
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Cypress cache
+.cypress-cache/
+
+# Build folders
 dist/
 build/
-coverage/
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# Coverage reports
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# Package lock if team policy requires (optional)
+# package-lock.json
+# yarn.lock

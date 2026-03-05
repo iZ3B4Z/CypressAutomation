@@ -1,5 +1,5 @@
 {
-  "name": "automatedbank",
+  "name": "cypressautomation",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,5 +8,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cypress": "^14.5.4",
+    "cypress-xpath": "^2.0.1",
+    "typescript": "^5.9.3"
+  }
 }
