@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open:ui": "cypress open --config-file cypress.config.ui.ts",
+    "cy:open:api": "cypress open --config-file cypress.config.api.ts",
+    "cy:run:ui": "cypress run --config-file cypress.config.ui.ts",
+    "cy:run:api": "cypress run --config-file cypress.config.api.ts"
   },
   "keywords": [],
   "author": "",
