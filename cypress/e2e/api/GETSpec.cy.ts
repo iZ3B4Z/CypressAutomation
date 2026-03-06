@@ -24,7 +24,7 @@ describe('API Requests - GET', () => {
       url: '/booking',
     }).its('headers').its('content-type').should('include', 'application/json')
   })
-  
+
   it('Should return an array', () => {
     cy.request({
       method: 'GET',
@@ -51,6 +51,23 @@ describe('API Requests - GET', () => {
       url: '/booking',
     }).then((res) => {
       expect(res.body).to.not.be.empty
+    })
+  })
+
+  it.only('Should return a specific Id', () => {
+    cy.fixture('bookings').then((bookingData: any) => {
+      for (let i = 1; i < 4; i++) {
+        cy.request({
+          method: 'GET',
+          url: `/booking/${i}`,
+        }).then((res) => {
+          const { firstname, lastname, totalprice, depositpaid } = res.body
+          expect(firstname).to.equal(bookingData[i - 1].firstname)
+          expect(lastname).to.equal(bookingData[i - 1].lastname)
+          expect(totalprice).to.equal(bookingData[i - 1].totalprice)
+          expect(depositpaid).to.equal(bookingData[i - 1].depositpaid)
+        })
+      }
     })
   })
 

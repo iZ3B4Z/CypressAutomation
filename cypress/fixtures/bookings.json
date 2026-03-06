@@ -1,0 +1,37 @@
+[
+    {
+        "firstname": "James",
+        "lastname": "Brown",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast and some edited stuff + function timeStamp() { [native code] }"
+    },
+
+    {
+        "firstname": "Jim",
+        "lastname": "Jones",
+        "totalprice": 681,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2022-03-26",
+            "checkout": "2025-03-19"
+        },
+        "additionalneeds": "Breakfast"
+    },
+
+    {
+        "firstname": "Mary",
+        "lastname": "Ericsson",
+        "totalprice": 784,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2025-01-07",
+            "checkout": "2025-06-23"
+        },
+        "additionalneeds": "Breakfast"
+    }
+]
